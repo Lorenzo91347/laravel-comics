@@ -15,10 +15,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $data=[
+        'comics' => config('comic')
+    ];
+    
+    dd($data);
+    return view('welcome',);
 });
 
-Route::get('/comics', function () {
-    return view('comics');
+Route::get('/main', function () {
+
+    $data=[
+        'comics' => config('comic')
+    ];
+
+  
+
+    return view('main',$data);
 });
 

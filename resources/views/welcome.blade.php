@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/js/app.js')
-    <title>Laravel Comics</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite(['resources/js/app.js'])
+    <title>Document</title>
 </head>
 <body>
-    <h1>Ciao</h1>
+    <div>
+        @include('header')
+        @yield('main')
+        @include('footer')
+    </div>
 </body>
 </html>

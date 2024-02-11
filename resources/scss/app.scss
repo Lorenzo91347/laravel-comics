@@ -1,1 +1,35 @@
 @import "~bootstrap/scss/bootstrap";
+
+
+
+
+.header-top{
+    height: 120px;
+    border-bottom: 5px solid #0282f9;
+    color:#0282f9;
+    text-align: center;
+    nav{
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+                
+}
+.background{
+    background-image: url('../img/jumbotron.jpg');
+   .list-cnt{
+        color: white;
+            ul{
+                background-color: rgba($color: #000000, $alpha: 0.6)
+        }
+   }
+}
+
+.bottom{
+    height: 120px;
+    color: #0282f9;
+    text-align: center;
+}
